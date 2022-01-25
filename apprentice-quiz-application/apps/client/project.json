@@ -1,0 +1,56 @@
+{
+  "root": "apps/client",
+  "sourceRoot": "apps/client",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/client",
+        "outputPath": "dist/apps/client"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "client:build",
+        "port": 3000,
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "client:build:production",
+          "port": 3000,
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "client:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/client"],
+      "options": {
+        "jestConfig": "apps/client/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@angular-devkit/build-angular:tslint",
+      "options": {
+        "tsConfig": ["apps/client/tsconfig.app.json"],
+        "exclude": ["**/node_modules/**", "!apps/client/**/*"]
+      }
+    }
+  },
+  "tags": []
+}
