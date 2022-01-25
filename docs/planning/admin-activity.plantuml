@@ -1,0 +1,95 @@
+@startuml
+start
+:login;
+:admin home;
+
+repeat
+	if (goto to user control) then
+
+		:add new user;
+		:require password set;
+
+	elseif (goto to quiz control) then
+		if (add quiz) then
+			:create new quiz
+			:set quiz name;
+			:add/remove questions;
+			:add/remove answers;
+
+		elseif (edit quiz) then
+			: change quiz properties
+			:add/remove questions;
+			:change quiz properties;
+			:add/remove answers;
+			:change answer properties;
+		else
+			:delete quiz;
+		endif
+
+
+	elseif (goto to preferences) then
+		:preferences page;
+		:update username;
+		:update password;
+	endif
+repeat while (selected logout) is (no)
+	-> yes;
+
+:logout;
+
+end
+
+
+
+
+
+
+
+
+
+' (*) --> "login"
+
+' -> "admin home page"
+
+' if "goto user control" then
+' 	-> "hi"
+' 	-> "admin home page"
+' endif
+
+' if "goto quiz control page" then
+'  	-> "quiz control page"
+
+' 	if ""
+' 	-> "admin home page"
+' endif
+
+' if "goto preference page" then
+' 	-> "preference page"
+' 	-> "admin home page"
+' endif
+
+' "user control page" -> "add new user"
+' -> "user control page"
+
+' "user control page" -> "remove user"
+' -> "user control page"
+' -> "admin home page" 
+
+
+' "admin home page" -> "quiz control page" 
+
+' "admin home page" -> "preferences page"
+' "preferences page" -> "update username"
+' -> "preferences page"
+
+' "preferences page" -> "update password"
+' -> "preferences page"
+
+
+' "preferences page" -> "change admin details"
+' -> "admin control page"
+
+' -> "logout"
+' -> (*)
+
+@enduml

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="445px" preserveAspectRatio="none" style="width:181px;height:445px;background:#FFFFFF;" version="1.1" viewBox="0 0 181 445" width="181px" zoomAndPan="magnify"><defs><filter height="300%" id="f378bfm0kev5r" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="77" cy="20" fill="#000000" filter="url(#f378bfm0kev5r)" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><rect fill="#FEFECE" filter="url(#f378bfm0kev5r)" height="34.1328" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="47" x="53.5" y="50"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="63.5" y="71.6016">login</text><rect fill="#FEFECE" filter="url(#f378bfm0kev5r)" height="34.1328" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="52" x="51" y="148.1328"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="32" x="61" y="169.7344">home</text><rect fill="#FEFECE" filter="url(#f378bfm0kev5r)" height="34.1328" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="132" x="11" y="202.2656"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="112" x="21" y="223.8672">remove/add admin</text><rect fill="#FEFECE" filter="url(#f378bfm0kev5r)" height="34.1328" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="124" x="15" y="256.3984"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="104" x="25" y="278">edit admin details</text><polygon fill="#FEFECE" filter="url(#f378bfm0kev5r)" points="77,104.1328,89,116.1328,77,128.1328,65,116.1328,77,104.1328" style="stroke:#A80036;stroke-width:1.5;"/><polygon fill="#FEFECE" filter="url(#f378bfm0kev5r)" points="36,310.5313,118,310.5313,130,322.5313,118,334.5313,36,334.5313,24,322.5313,36,310.5313" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="36" y="326.6885">logout selected</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="14" x="130" y="320.2109">no</text><rect fill="#FEFECE" filter="url(#f378bfm0kev5r)" height="34.1328" rx="12.5" ry="12.5" style="stroke:#A80036;stroke-width:1.5;" width="53" x="50.5" y="354.5313"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="60.5" y="376.1328">&gt; yes</text><ellipse cx="77" cy="418.6641" fill="#FFFFFF" filter="url(#f378bfm0kev5r)" rx="10" ry="10" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:2.5;" x1="70.8128" x2="83.1872" y1="412.4769" y2="424.8512"/><line style="stroke:#000000;stroke-width:2.5;" x1="83.1872" x2="70.8128" y1="412.4769" y2="424.8512"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="30" y2="50"/><polygon fill="#A80036" points="73,40,77,50,81,40,77,44" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="182.2656" y2="202.2656"/><polygon fill="#A80036" points="73,192.2656,77,202.2656,81,192.2656,77,196.2656" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="236.3984" y2="256.3984"/><polygon fill="#A80036" points="73,246.3984,77,256.3984,81,246.3984,77,250.3984" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="128.1328" y2="148.1328"/><polygon fill="#A80036" points="73,138.1328,77,148.1328,81,138.1328,77,142.1328" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="130" x2="155" y1="322.5313" y2="322.5313"/><polygon fill="#A80036" points="151,229.332,155,219.332,159,229.332,155,225.332" style="stroke:#A80036;stroke-width:1.5;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="155" x2="155" y1="116.1328" y2="322.5313"/><line style="stroke:#A80036;stroke-width:1.5;" x1="155" x2="89" y1="116.1328" y2="116.1328"/><polygon fill="#A80036" points="99,112.1328,89,116.1328,99,120.1328,95,116.1328" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="290.5313" y2="310.5313"/><polygon fill="#A80036" points="73,300.5313,77,310.5313,81,300.5313,77,304.5313" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="84.1328" y2="104.1328"/><polygon fill="#A80036" points="73,94.1328,77,104.1328,81,94.1328,77,98.1328" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="334.5313" y2="354.5313"/><polygon fill="#A80036" points="73,344.5313,77,354.5313,81,344.5313,77,348.5313" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.5;" x1="77" x2="77" y1="388.6641" y2="408.6641"/><polygon fill="#A80036" points="73,398.6641,77,408.6641,81,398.6641,77,402.6641" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e4eb38c220f8ea714e0781ba7cc45080]
+@startuml
+
+start
+
+
+:login;
+
+repeat
+
+:home;
+
+:remove/add admin;
+:edit admin details;
+
+repeat while (logout selected) is (no)
+	-> yes
+
+end
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 16:16:42 GMT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

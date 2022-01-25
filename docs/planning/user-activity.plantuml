@@ -1,0 +1,33 @@
+@startuml
+
+start
+
+:login;
+
+repeat
+
+	:home;
+
+	if (goto quizzes) then
+		:show all avaliable quizzes;
+		if (attempts quiz) then (yes)
+			:goto quiz attemtpt page 
+			with selected quiz;
+		endif
+	elseif (goto attempts) then
+		:show last 5 quiz attempts;
+		:show results of quiz attempts;
+		:how question breakdown of quiz attempts;
+	elseif (goto preferences) then
+		:set username;
+		:set password;
+	endif
+	
+repeat while (selected logout) is (no)
+	-> no
+
+:logout;
+
+end
+
+@enduml
