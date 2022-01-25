@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="882px" preserveAspectRatio="none" style="width:615px;height:882px;background:#FFFFFF;" version="1.1" viewBox="0 0 615 882" width="615px" zoomAndPan="magnify"><defs><filter height="300%" id="f8jimj9r0oxrn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[b88072fab8e8b345faee031989fda1af]
+cluster user management--><polygon fill="#FFFFFF" filter="url(#f8jimj9r0oxrn)" points="390.5,6,525.5,6,532.5,28.4883,584.5,28.4883,584.5,300,390.5,300,390.5,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="390.5" x2="532.5" y1="28.4883" y2="28.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="394.5" y="21.5352">user management</text><!--MD5=[3f87a5db604ab6c27f94894ca44f5ed0]
+cluster Quiz management--><polygon fill="#FFFFFF" filter="url(#f8jimj9r0oxrn)" points="404.5,324,542.5,324,549.5,346.4883,570.5,346.4883,570.5,539,404.5,539,404.5,324" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="404.5" x2="549.5" y1="346.4883" y2="346.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="132" x="408.5" y="339.5352">Quiz management</text><!--MD5=[9866a4850b67e61c0bb8154df9df1072]
+cluster authentication--><polygon fill="#FFFFFF" filter="url(#f8jimj9r0oxrn)" points="16,289,126,289,133,311.4883,185,311.4883,185,501,16,501,16,289" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="133" y1="311.4883" y2="311.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="104" x="20" y="304.5352">authentication</text><!--MD5=[1bca9820b2eb8f878b6c84586a222434]
+cluster user quiz actions--><polygon fill="#FFFFFF" filter="url(#f8jimj9r0oxrn)" points="377,563,507,563,514,585.4883,598,585.4883,598,875,377,875,377,563" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="377" x2="514" y1="585.4883" y2="585.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="381" y="578.5352">user quiz actions</text><ellipse cx="487.2952" cy="199.059" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="75.7952" ry="17.559" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="433.2952" y="202.3501">create new user</text><ellipse cx="487.3912" cy="267.7782" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="66.8912" ry="15.7782" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="441.8912" y="271.7958">remove user</text><ellipse cx="487.7394" cy="60.1479" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="81.2394" ry="18.6479" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="427.2394" y="63.4389">create new admin</text><ellipse cx="487.7483" cy="130.2497" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="71.7483" ry="16.7497" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="437.8633" y="133.7768">remove admin</text><ellipse cx="487.6108" cy="507.8222" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="62.1108" ry="14.8222" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="449.1108" y="511.8397">make quiz</text><ellipse cx="487.3318" cy="375.0664" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="65.8318" ry="15.5664" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="443.3318" y="379.0839">update quiz</text><ellipse cx="487.3912" cy="441.7782" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="66.8912" ry="15.7782" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="441.8912" y="445.7958">remove quiz</text><ellipse cx="100.734" cy="406.159" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="36.234" ry="14.659" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="83.234" y="409.45">login</text><ellipse cx="100.4472" cy="470.1647" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="45.4472" ry="14.6647" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="75.5068" y="473.7142">Logout</text><ellipse cx="100.6987" cy="340.1397" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="68.6987" ry="16.1397" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="53.171" y="344.0562">set password</text><ellipse cx="487.3312" cy="767.7662" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="94.3312" ry="21.2662" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="411.8312" y="771.0573">view avaliable quizzes</text><ellipse cx="487.6429" cy="841.8286" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="72.1429" ry="16.8286" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="437.4529" y="845.3054">attempt a quiz</text><ellipse cx="487.7351" cy="617.247" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="84.2351" ry="19.247" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="128" x="423.7351" y="620.538">view quiz attempts</text><ellipse cx="487.2698" cy="690.854" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="87.2698" ry="19.854" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="419.7698" y="694.145">review quiz attempt</text><!--MD5=[eab4eb7d0ef44c19c3b4c8ba4c3c2b5b]
+entity root--><ellipse cx="250.5" cy="259" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M250.5,267 L250.5,294 M237.5,275 L263.5,275 M250.5,294 L237.5,309 M250.5,294 L263.5,309 " fill="none" filter="url(#f8jimj9r0oxrn)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="236" y="328.0352">root</text><!--MD5=[79a439086b036a57b90a01d7b2f8bbd1]
+entity admin--><ellipse cx="250.5" cy="375" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M250.5,383 L250.5,410 M237.5,391 L263.5,391 M250.5,410 L237.5,425 M250.5,410 L263.5,425 " fill="none" filter="url(#f8jimj9r0oxrn)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="229" y="444.0352">admin</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><ellipse cx="250.5" cy="586" fill="#FEFECE" filter="url(#f8jimj9r0oxrn)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M250.5,594 L250.5,621 M237.5,602 L263.5,602 M250.5,621 L237.5,636 M250.5,621 L263.5,636 " fill="none" filter="url(#f8jimj9r0oxrn)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="235.5" y="655.0352">user</text><!--MD5=[42cd0eb4c1f30db0db9775fd9456c577]
+reverse link login to root--><path d="M138.09,398.44 C155.97,393.41 177.02,385.39 193,373 C211.46,358.69 226.07,336.62 235.81,318.83 " fill="none" id="login-backto-root" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="133.14,399.78,142.8704,401.3027,137.9681,398.4801,140.7906,393.5778,133.14,399.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3ec159744d056d81ac2ac0c63f6e5f2f]
+reverse link logout to root--><path d="M147.02,462.36 C163.23,457.67 180.53,450.12 193,438 C197.18,433.94 220.59,370.37 235.94,327.88 " fill="none" id="logout-backto-root" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="142.03,463.73,151.7646,465.2259,146.8545,462.4168,149.6635,457.5067,142.03,463.73" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0adc72d811053b70ab8b8fd35ced1b4b]
+reverse link sp to root--><path d="M145.27,325.21 C176.17,314.77 215.57,301.46 235.94,294.58 " fill="none" id="sp-backto-root" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="140.39,326.86,150.1964,327.7733,145.1277,325.2617,147.6392,320.193,140.39,326.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[14d91696436f573ef5ebafff22970719]
+link root to cna--><path d="M265.05,251.33 C282.41,207.35 316.65,136.44 369,96 C382.85,85.3 399.88,77.76 416.64,72.46 " fill="none" id="root-to-cna" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="421.83,70.88,412.0585,69.6482,417.0428,72.3233,414.3677,77.3077,421.83,70.88" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3dc32ad9a0945527f0e74e46f77ea356]
+link root to ra--><path d="M265.08,265.45 C279.24,241.63 303.36,205.71 332,182 C357.76,160.67 392.66,147.96 422.77,140.44 " fill="none" id="root-to-ra" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="427.94,139.19,418.253,137.4116,423.0794,140.3623,420.1287,145.1886,427.94,139.19" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[dc307a13130d5d5bade7f0bdc4388a74]
+reverse link login to admin--><path d="M141.73,406 C169.89,406 206.35,406 228.82,406 " fill="none" id="login-backto-admin" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="136.57,406,145.57,410,141.57,406,145.57,402,136.57,406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[00789420dc6f94da6ef7d3ee47ee0fcc]
+reverse link logout to admin--><path d="M139.32,458.46 C156.04,452.93 175.78,445.81 193,438 C205.22,432.46 218.28,425.15 228.77,418.92 " fill="none" id="logout-backto-admin" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="134.24,460.13,144.0387,461.123,138.9905,458.5703,141.5432,453.5222,134.24,460.13" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[486d0460332cc4ea13238d0c53b289c3]
+reverse link sp to admin--><path d="M145.87,354.87 C161.03,360.38 177.95,367 193,374 C205.26,379.71 218.45,387.1 228.99,393.33 " fill="none" id="sp-backto-admin" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="140.8,353.05,147.9277,359.8467,145.5081,354.7335,150.6213,352.3138,140.8,353.05" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2e37208ab35139f52457e24c5aa2ff63]
+link admin to cnu--><path d="M269.32,365.23 C288.48,326.04 322.55,267.9 369,234 C383.93,223.1 402.25,215.57 419.94,210.38 " fill="none" id="admin-to-cnu" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="424.91,208.97,415.1623,207.562,420.0976,210.3266,417.3329,215.2619,424.91,208.97" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7eac76a32bc0f63f5e79256f486bae2b]
+link admin to ru--><path d="M272.35,393.75 C314.14,369.21 408.25,313.95 456.6,285.56 " fill="none" id="admin-to-ru" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="461.13,282.9,451.3427,283.9999,456.8163,285.4282,455.3879,290.9018,461.13,282.9" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[272aac34a2917665094fba49ba7b3d94]
+link admin to mq--><path d="M272.29,420.44 C295.12,435.76 333.3,459.81 369,475 C390.21,484.03 414.61,491.34 435.66,496.77 " fill="none" id="admin-to-mq" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="440.65,498.04,432.9099,491.9497,435.8035,496.8105,430.9427,499.7041,440.65,498.04" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[c6bd1451c99df34f05a574ccd615f1bd]
+link admin to uq--><path d="M272.35,403.25 C306.13,398.79 374.09,389.83 424.43,383.19 " fill="none" id="admin-to-uq" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="429.55,382.51,420.1024,379.7274,424.5934,383.1671,421.1537,387.658,429.55,382.51" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[311ee00d524f8cc406128c4e9558eeb5]
+link admin to rq--><path d="M272.35,409.19 C306.35,414.4 374.96,424.91 425.4,432.64 " fill="none" id="admin-to-rq" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="430.53,433.43,422.2394,428.1134,425.5876,432.6729,421.0281,436.0212,430.53,433.43" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a1dd30e2e2d00e43f9d6f2f5ddd3de88]
+reverse link login to user--><path d="M140.17,411.35 C158.37,415.72 179.08,423.64 193,438 C229.3,475.43 242.29,535.99 246.94,576.15 " fill="none" id="login-backto-user" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="135.11,410.21,143.0116,416.0891,139.9879,411.3082,144.7688,408.2845,135.11,410.21" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f8ffe8914f166eee6d6f2f885425d60a]
+reverse link logout to user--><path d="M119.23,487.61 C148.85,517.03 207.81,575.6 235.07,602.67 " fill="none" id="logout-backto-user" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="115.42,483.83,118.9927,493.008,118.9698,487.3512,124.6266,487.3283,115.42,483.83" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[23a6e69b924cc63e0cb879dedb2cf64f]
+reverse link sp to user--><path d="M159,351.65 C171.7,356.66 184.03,363.8 193,374 C219.18,403.75 236.8,515.14 244.72,576.25 " fill="none" id="sp-backto-user" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="154.31,349.91,161.3509,356.7966,158.9963,351.6531,164.1399,349.2985,154.31,349.91" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f20cc9170c31d8c840c5bf11776afb33]
+link user to vq--><path d="M265.6,634.66 C285.99,659.11 326,703.17 369,729 C383.78,737.88 400.83,745.02 417.28,750.64 " fill="none" id="user-to-vq" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="422.36,752.34,415.0928,745.6926,417.618,750.7546,412.5561,753.2798,422.36,752.34" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[84eda189a51be36fd8c7498942d36ff6]
+link user to aaq--><path d="M265.58,655.65 C283.23,698.77 317.56,767.64 369,807 C384.14,818.59 403.07,826.35 421.29,831.55 " fill="none" id="user-to-aaq" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="426.4,832.95,418.7665,826.7267,421.5755,831.6368,416.6654,834.4459,426.4,832.95" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ea72c662ed9e67d8fddcfa8fa080f939]
+link user to vqa--><path d="M265.85,617 C291.86,617 348.7,617 398.18,617 " fill="none" id="user-to-vqa" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="403.25,617,394.25,613,398.25,617,394.25,621,403.25,617" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0d793fad493aa05c978536f0566fe7e0]
+link user to rqa--><path d="M265.85,621.52 C297.77,631.57 376.12,656.24 430.31,673.3 " fill="none" id="user-to-rqa" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="435.14,674.83,427.7539,668.315,430.3701,673.3305,425.3547,675.9468,435.14,674.83" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[76bf0f783a12231e2986ec7b50866fdb]
+@startuml
+left to right direction
+
+' actors
+:root: as root
+:admin: as admin
+:user: as user
+
+
+package "user management" {
+	usecase (create new user) as cnu
+	usecase (remove user) as ru
+
+	usecase (create new admin) as cna
+	usecase (remove admin) as ra
+}
+
+package "Quiz management" {
+	usecase (make quiz) as mq
+	usecase (update quiz) as uq 
+	usecase (remove quiz) as rq
+}
+
+package "authentication" {
+	usecase (login) as login
+	usecase (Logout) as logout
+	usecase (set password) as sp
+}
+
+package "user quiz actions" {
+	usecase (view avaliable quizzes) as vq
+	usecase (attempt a quiz) as aaq
+	usecase (view quiz attempts) as vqa
+	usecase (review quiz attempt) as rqa
+}
+
+' root cases
+login <- - root
+logout <- - root
+sp <- - root
+
+root - - -> cna
+root - - -> ra
+
+' admin cases
+
+login <- - admin
+logout <- - admin
+sp <- - admin
+
+admin - - -> cnu
+admin - - -> ru
+
+admin - - -> mq
+admin - - -> uq
+admin - - -> rq
+
+' user cases
+
+login <- - user
+logout <- - user
+sp <- - user
+
+user - - -> vq
+user - - -> aaq
+user - - -> vqa
+user - - -> rqa
+
+@enduml
+
+@startuml
+left to right direction
+
+:root: as root
+:admin: as admin
+:user: as user
+
+
+package "user management" {
+	usecase (create new user) as cnu
+	usecase (remove user) as ru
+
+	usecase (create new admin) as cna
+	usecase (remove admin) as ra
+}
+
+package "Quiz management" {
+	usecase (make quiz) as mq
+	usecase (update quiz) as uq 
+	usecase (remove quiz) as rq
+}
+
+package "authentication" {
+	usecase (login) as login
+	usecase (Logout) as logout
+	usecase (set password) as sp
+}
+
+package "user quiz actions" {
+	usecase (view avaliable quizzes) as vq
+	usecase (attempt a quiz) as aaq
+	usecase (view quiz attempts) as vqa
+	usecase (review quiz attempt) as rqa
+}
+
+login <- - root
+logout <- - root
+sp <- - root
+
+root - - -> cna
+root - - -> ra
+
+
+login <- - admin
+logout <- - admin
+sp <- - admin
+
+admin - - -> cnu
+admin - - -> ru
+
+admin - - -> mq
+admin - - -> uq
+admin - - -> rq
+
+
+login <- - user
+logout <- - user
+sp <- - user
+
+user - - -> vq
+user - - -> aaq
+user - - -> vqa
+user - - -> rqa
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 16:16:42 GMT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

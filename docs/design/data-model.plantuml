@@ -1,0 +1,87 @@
+@startuml
+
+note as GlobalNote
+	<b><u>Class/Entity relationship diagram</u></b>
+	Each class will have and id field
+	Some classes will have a creation and updated field
+end note
+
+package "Authentication" {
+
+	class Session {
+		user: Account
+	}
+
+	abstract class Account {
+		username: string
+		password: string
+		sessions: [Sessions]
+	}
+
+	Session }-|| Account
+}
+
+package "Accounts" {
+
+	class Root {
+		admins: [Admin]
+	}
+
+	class Admin {
+		createdUsers: [Users]
+		createdQuizzes: [Quiz]
+	}
+
+	class User {
+		quizAttempts: [QuizAttempt]
+	}
+
+	Root --|> Account
+	Admin --|> Account
+	User --|> Account
+
+	Root ||--{ Admin
+	Admin ||--{ User
+}
+
+package "Quiz data" {
+
+	class Quiz {
+		name: string
+		description: string?
+		questions: [Question]
+	}
+
+	class Question {
+		text: string
+		answers: [Answer]
+	}
+
+	class Answer {
+		text: string
+		isCorrect: boolean
+	}
+
+	Admin ||--{ Quiz
+	Quiz ||--{ Question
+	Question ||--{ Answer
+}
+
+package "Quiz attempt data" {
+	class QuizAttempt {
+		attemptDate: Date
+		quiz: Quiz
+		questionAttempts: [QuestionAttempt]
+	}
+
+	class QuestionAttempt {
+		questionAttempt: QuestionAttempt
+		selectedAnswer: Answer?
+	}
+
+	User||-{ QuizAttempt
+	QuizAttempt ||--{ QuestionAttempt
+	QuestionAttempt ||--{ Answer
+}
+
+@enduml

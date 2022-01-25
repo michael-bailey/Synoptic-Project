@@ -1,0 +1,20 @@
+@startuml
+
+start
+
+
+:login;
+
+repeat
+
+:home;
+
+:remove/add admin;
+:edit admin details;
+
+repeat while (logout selected) is (no)
+	-> yes
+
+end
+
+@enduml
