@@ -1,0 +1,69 @@
+@startuml
+left to right direction
+
+' actors
+:root: as root
+:admin: as admin
+:user: as user
+
+
+package "user management" {
+	usecase (create new user) as cnu
+	usecase (remove user) as ru
+
+	usecase (create new admin) as cna
+	usecase (remove admin) as ra
+}
+
+package "Quiz management" {
+	usecase (make quiz) as mq
+	usecase (update quiz) as uq 
+	usecase (remove quiz) as rq
+}
+
+package "authentication" {
+	usecase (login) as login
+	usecase (Logout) as logout
+	usecase (set password) as sp
+}
+
+package "user quiz actions" {
+	usecase (view avaliable quizzes) as vq
+	usecase (attempt a quiz) as aaq
+	usecase (view quiz attempts) as vqa
+	usecase (review quiz attempt) as rqa
+}
+
+' root cases
+login <-- root
+logout <-- root
+sp <-- root
+
+root ---> cna
+root ---> ra
+
+' admin cases
+
+login <-- admin
+logout <-- admin
+sp <-- admin
+
+admin ---> cnu
+admin ---> ru
+
+admin ---> mq
+admin ---> uq
+admin ---> rq
+
+' user cases
+
+login <-- user
+logout <-- user
+sp <-- user
+
+user ---> vq
+user ---> aaq
+user ---> vqa
+user ---> rqa
+
+@enduml
