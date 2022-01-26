@@ -1,8 +1,10 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { GraphQLModule } from '@nestjs/graphql';
 
-import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { AppResolver } from './app.resolver';
+import { join } from 'path';
 
 const DB_HOST = process.env['DB_HOST'] ?? 'localhost';
 const DB_PORT = process.env['DB_PORT'] ?? '';
@@ -23,8 +25,17 @@ const DB_PORT = process.env['DB_PORT'] ?? '';
       autoLoadEntities: true,
       synchronize: true,
     }),
+    GraphQLModule.forRoot({
+      debug: false,
+      autoSchemaFile: join(process.cwd(), 'src/graphql/schema.gql'),
+      playground: {
+        settings: {
+          'request.credentials': 'include',
+        },
+      },
+    }),
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [AppService, AppResolver],
 })
 export class AppModule {}
