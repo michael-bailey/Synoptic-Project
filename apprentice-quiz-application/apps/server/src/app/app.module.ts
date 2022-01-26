@@ -5,6 +5,7 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { AppService } from './app.service';
 import { AppResolver } from './app.resolver';
 import { join } from 'path';
+import { AuthModule } from './auth/auth.module';
 
 const DB_HOST = process.env['DB_HOST'] ?? 'localhost';
 const DB_PORT = process.env['DB_PORT'] ?? '';
@@ -27,13 +28,14 @@ const DB_PORT = process.env['DB_PORT'] ?? '';
     }),
     GraphQLModule.forRoot({
       debug: false,
-      autoSchemaFile: join(process.cwd(), 'src/graphql/schema.gql'),
+      autoSchemaFile: join(process.cwd(), 'graphql/schema.gql'),
       playground: {
         settings: {
           'request.credentials': 'include',
         },
       },
     }),
+    AuthModule,
   ],
   controllers: [],
   providers: [AppService, AppResolver],
