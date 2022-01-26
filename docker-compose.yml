@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: 'synoptic-db'
+    hostname: 'db'
+    environment:
+      MYSQL_DATABASE: 'main'
+      MYSQL_USER: 'main'
+      MYSQL_PASSWORD: 'synoptic'
+      MYSQL_ROOT_PASSWORD: 'toor'
+    ports:
+      - '3306:3306'
+    expose:
+      - 3306
+    volumes:
+      - api-db:/var/lib/mysql
+
+volumes:
+  api-db:
