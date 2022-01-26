@@ -2,7 +2,7 @@
 const withNx = require('@nrwl/next/plugins/with-nx');
 const process = require('process');
 
-let SERVER_ADDRESS = process.env['server_address'] ?? 'localhost:4200';
+let SERVER_ADDRESS = process.env['server_address'] ?? 'localhost:3333';
 
 /**
  * @type {import('@nrwl/next/plugins/with-nx').WithNxOptions}
