@@ -29,6 +29,7 @@ const DB_PORT = process.env['DB_PORT'] ?? '';
     GraphQLModule.forRoot({
       debug: false,
       autoSchemaFile: join(process.cwd(), 'graphql/schema.gql'),
+      context: ({ req, res }) => ({ req, res }),
       playground: {
         settings: {
           'request.credentials': 'include',
