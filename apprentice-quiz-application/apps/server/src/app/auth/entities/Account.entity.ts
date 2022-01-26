@@ -18,7 +18,4 @@ export abstract class Account {
 
   @Column()
   _salt: string;
-
-  @OneToMany(() => Session, (s) => s.account)
-  sessions: Promise<Array<Session>>;
 }

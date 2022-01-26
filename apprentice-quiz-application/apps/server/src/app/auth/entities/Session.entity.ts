@@ -1,6 +1,9 @@
-import { ObjectType, Field, Int } from '@nestjs/graphql';
-import { Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
-import { Account } from './Account.entity';
+import { ObjectType, Field } from '@nestjs/graphql';
+import { Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+
+import { Admin } from './Admin.entity';
+import { Root } from './Root.entity';
+import { User } from './User.entity';
 
 @Entity()
 @ObjectType()
@@ -9,6 +12,12 @@ export class Session {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(() => Account, (a) => a.sessions)
-  account: Promise<Account>;
+  @ManyToOne(() => User, (u) => u.sessions)
+  user: Promise<User | null>;
+
+  @ManyToOne(() => Admin, (a) => a.sessions)
+  admin: Promise<Admin | null>;
+
+  @ManyToOne(() => Root, (r) => r.sessions)
+  root: Promise<Root | null>;
 }
