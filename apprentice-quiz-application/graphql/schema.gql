@@ -6,29 +6,17 @@ type Test {
   id: String!
 }
 
-type Auth {
-  """Example field (placeholder)"""
-  exampleField: Int!
+type Session {
+  id: String!
+  account: Account
+}
+
+type Account {
+  id: String!
+  username: String!
 }
 
 type Query {
   AppTest: Test!
-  auth(id: Int!): Auth!
-}
-
-type Mutation {
-  createAuth(createAuthInput: CreateAuthInput!): Auth!
-  updateAuth(updateAuthInput: UpdateAuthInput!): Auth!
-  removeAuth(id: Int!): Auth!
-}
-
-input CreateAuthInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateAuthInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
+  session: Session!
 }
