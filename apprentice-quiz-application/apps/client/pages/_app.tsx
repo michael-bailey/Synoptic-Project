@@ -4,17 +4,17 @@ import {
   RelayEnvironmentProvider,
   usePreloadedQuery,
 } from 'react-relay/hooks';
-import { AppProps } from 'next/app';
+import Link from 'next/link';
 import Head from 'next/head';
+import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
+import { AppProps } from 'next/app';
 
 import RelayEnvironment from '../Relay/RelayEnvironment';
+import Topbar from '../Components/Navbars/Topbar';
 
 // required for react bootstrap to work with next
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Link from 'next/link';
-import Topbar from '../Components/Navbars/Topbar';
-import { Suspense } from 'react';
 
 function App({ Component, pageProps }: AppProps) {
   return (
