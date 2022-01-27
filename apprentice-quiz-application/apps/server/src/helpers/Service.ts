@@ -8,11 +8,15 @@ export default abstract class Service<TEntity, TEntityCreate> {
   // this needs to be set so new entities can be created dynamically.
   abstract type: new (...args: any[]) => TEntity;
 
+  static getName() {
+    return this.name;
+  }
+
   // requires access to the main services database repository.
   constructor(private repository: Repository<TEntity>) {}
 
   async create(createDTO: TEntityCreate): Promise<TEntity> {
-    console.info(`[${Service.name}:create] creating new entity`);
+    console.info(`[${Service.getName()}:create] creating new entity`);
     let newEntity = new this.type();
     Object.assign(newEntity, createDTO);
     newEntity = await this.repository.save(newEntity);
@@ -21,14 +25,14 @@ export default abstract class Service<TEntity, TEntityCreate> {
   }
 
   async findBy(query: FindManyOptions<TEntity>): Promise<Array<TEntity>> {
-    console.info(`[${Service.name}:findBy] found entities`);
+    console.info(`[${Service.getName()}:findBy] found entities`);
     const entitys = await this.repository.find(query);
     console.table(entitys);
     return entitys;
   }
 
   async findById(id: string): Promise<TEntity | null> {
-    console.info(`[${Service.name}:findBy] found`);
+    console.info(`[${Service.getName()}:findBy] found`);
     const entity = await this.repository.findOne(id);
     console.table(entity);
     return entity;
@@ -38,7 +42,7 @@ export default abstract class Service<TEntity, TEntityCreate> {
     id: string,
     updateDTO: Partial<TEntityCreate>
   ): Promise<TEntity> {
-    console.info(`[${Service.name}:update] updating entity`);
+    console.info(`[${Service.getName()}:update] updating entity`);
     let entity = await this.repository.findOne(id);
     Object.assign(entity, updateDTO);
     entity = await this.repository.save(entity);
@@ -47,14 +51,14 @@ export default abstract class Service<TEntity, TEntityCreate> {
   }
 
   async remove(id: string): Promise<void> {
-    console.info(`[${Service.name}:remove] removing entity`);
+    console.info(`[${Service.getName()}:remove] removing entity`);
     const entity = await this.repository.findOne(id);
     console.table(entity);
     await this.repository.delete(entity);
   }
 
   async save(entity: TEntity) {
-    console.info(`[${Service.name}:save] saving entity`);
+    console.info(`[${Service.getName()}:save] saving entity`);
     return await this.repository.save(entity);
   }
 }
