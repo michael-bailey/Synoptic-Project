@@ -57,10 +57,11 @@ export class AuthResolver {
     @Args('password') password: string,
     @Context() ctx
   ): Promise<Session> {
-    let session = await this.authService.getSession(ctx);
+    console.log('---| login root |---');
+    let session = await this.logout(ctx);
+    console.table(session);
     session = await this.rootService.login(session, password);
-    this.authService.save(session);
-    return session;
+    return await this.authService.save(session);
   }
 
   @Mutation(() => Session)
@@ -69,8 +70,10 @@ export class AuthResolver {
     @Args('password') password: string,
     @Context() ctx
   ) {
-    let session = await this.authService.getSession(ctx);
-    session = await this.adminService.login(ctx, username, password);
+    console.log('---| login admin |---');
+    let session = await this.logout(ctx);
+    console.table(session);
+    session = await this.adminService.login(session, username, password);
     return await this.authService.save(session);
   }
 
@@ -80,8 +83,9 @@ export class AuthResolver {
     @Args('password') password: string,
     @Context() ctx
   ) {
-    let session = await this.authService.getSession(ctx);
-    session = await this.userService.login(ctx, username, password);
+    console.log('---| login user |---');
+    let session = await this.logout(ctx);
+    session = await this.userService.login(session, username, password);
     return await this.authService.save(session);
   }
 

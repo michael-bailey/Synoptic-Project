@@ -10,6 +10,9 @@ import { Root } from './entities/Root.entity';
 import { AdminResolver } from './resolvers/admin.resolver';
 import { RootResolver } from './resolvers/root.resolver';
 import { UserResolver } from './resolvers/user.resolver';
+import { RootService } from './services/root.service';
+import { AdminService } from './services/admin.service';
+import { UserService } from './services/user.service';
 
 @Module({
   imports: [TypeOrmModule.forFeature([User, Admin, Root, Session])],
@@ -19,6 +22,9 @@ import { UserResolver } from './resolvers/user.resolver';
     AuthResolver,
     UserResolver,
     AuthService,
+    RootService,
+    AdminService,
+    UserService,
   ],
 })
 export class AuthModule {}
