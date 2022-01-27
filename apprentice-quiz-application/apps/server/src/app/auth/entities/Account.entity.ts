@@ -21,6 +21,6 @@ export abstract class Account {
 
   // todo: replace this with implementation
   checkPassword(password: string) {
-    return true;
+    return this._password == password;
   }
 }

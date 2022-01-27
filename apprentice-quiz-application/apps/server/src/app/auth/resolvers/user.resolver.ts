@@ -1,4 +1,4 @@
-import { Parent, ResolveField, Resolver } from '@nestjs/graphql';
+import { Mutation, Parent, ResolveField, Resolver } from '@nestjs/graphql';
 import { Session } from '../entities/Session.entity';
 
 import { User } from '../entities/User.entity';
