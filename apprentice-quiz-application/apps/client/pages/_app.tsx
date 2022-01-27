@@ -1,8 +1,10 @@
 import { RelayEnvironmentProvider } from 'react-relay/hooks';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import './styles.css';
 import RelayEnvironment from '../Relay/RelayEnvironment';
+
+// required for react bootstrap to work with next
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
