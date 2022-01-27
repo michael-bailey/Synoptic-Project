@@ -18,4 +18,9 @@ export abstract class Account {
 
   @Column()
   _salt: string;
+
+  // todo: replace this with implementation
+  checkPassword(password: string) {
+    return true;
+  }
 }
