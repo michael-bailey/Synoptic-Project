@@ -6,17 +6,43 @@ type Test {
   id: String!
 }
 
-type Session {
-  id: String!
-  account: Account
-}
-
-type Account {
+type Root {
   id: String!
   username: String!
+  admins: [Admin!]!
+  sessions: Session!
+}
+
+type User {
+  id: String!
+  username: String!
+  sessions: Session!
+}
+
+type Admin {
+  id: String!
+  username: String!
+  users: [User!]!
+  sessions: Session!
+}
+
+type Session {
+  id: String!
+  root: Root
+  admin: Admin
+  user: User
 }
 
 type Query {
   AppTest: Test!
   session: Session!
+}
+
+type Mutation {
+  createUser(password: String!, username: String!): Admin!
+  createAdmin(password: String!, username: String!): Root!
+  loginRoot(password: String!): Session!
+  loginAdmin(password: String!, username: String!): Session!
+  loginUser(password: String!, username: String!): Session!
+  logout: Session!
 }
