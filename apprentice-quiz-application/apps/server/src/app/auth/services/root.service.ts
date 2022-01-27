@@ -2,24 +2,35 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Request, Response } from 'express';
 
 import { Repository } from 'typeorm';
+import { CreateAdminInput } from '../dto/create-admin.input';
 import { Root } from '../entities/Root.entity';
 import { Session } from '../entities/Session.entity';
+import { AdminService } from './admin.service';
 
 export class RootService {
   constructor(
-    @InjectRepository(Root) private rootRepository: Repository<Root>
+    @InjectRepository(Root) private rootRepository: Repository<Root>,
+    private adminService: AdminService
   ) {}
 
+  async addAdmin(root: Root, createDTO: CreateAdminInput) {
+    const admin = await this.adminService.create(createDTO);
+
+    root.admins = Promise.resolve([...(await root.admins), admin]);
+    return await this.rootRepository.save(root);
+  }
+
   async login(session: Session, password: string) {
-    const root = await this.rootRepository.findOne('0');
+    let root = await this.rootRepository.findOne('0');
 
     // create root if it does not exist
     if (root == null) {
-      const root = new Root();
+      console.log('no root');
+      root = new Root();
       root.username = 'root';
       root.id = '0';
-      root._password = 'root';
-      this.rootRepository.save(root);
+      root.password = 'root';
+      root = await this.rootRepository.save(root);
     }
 
     if (root.checkPassword(password)) {

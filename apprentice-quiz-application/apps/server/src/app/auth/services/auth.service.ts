@@ -27,11 +27,12 @@ export class AuthService extends Service<Session, CreateSessionInput> {
   async getSession(context: { req: Request; res: Response }): Promise<Session> {
     const sessionID = context.req.cookies['sessionID'];
 
+    console.log(`[AuthService:getSession] sessionID: ${sessionID} `);
+
     // check if session exists
     if (sessionID != null) {
       const session = await this.findById(sessionID);
       if (session != null) return session;
-      return this.create({});
     }
 
     const session = await this.create({});
