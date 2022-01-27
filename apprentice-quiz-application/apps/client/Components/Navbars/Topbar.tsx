@@ -10,66 +10,10 @@ import {
   usePreloadedQuery,
 } from 'react-relay';
 import RelayEnvironment from '../../Relay/RelayEnvironment';
-
-const appQuery = graphql`
-  query TopbarRootQuery {
-    session {
-      id
-      root {
-        id
-        username
-      }
-      admin {
-        id
-        username
-      }
-      user {
-        id
-        username
-      }
-    }
-  }
-`;
-
-const logoutMutation = graphql`
-  mutation TopbarLogoutMutation {
-    logout {
-      id
-      root {
-        id
-        username
-      }
-      admin {
-        id
-        username
-      }
-      user {
-        id
-        username
-      }
-    }
-  }
-`;
-
-console.log(`making query call`);
-const query = loadQuery<TopbarRootQuery>(RelayEnvironment, appQuery, {});
+import useAccount from 'apps/client/Hooks/useAccount';
 
 export default function Topbar() {
-  const data = usePreloadedQuery<TopbarRootQuery>(appQuery, query, {});
-  const [commitLogoutMutation] =
-    useMutation<TopbarLogoutMutation>(logoutMutation);
-  console.log(`got data: ${data}`);
-
-  let loggedin =
-    data.session.root != null ||
-    data.session.admin != null ||
-    data.session.user != null;
-
-  let username =
-    data.session.root?.username ??
-    data.session.admin?.username ??
-    data.session.user?.username ??
-    'Username Error';
+  const { username, isLoggedIn, logout } = useAccount();
 
   // const useLazyLoadQuery<TopbarRootQuery>(appQuery, {});
   return (
@@ -78,13 +22,9 @@ export default function Topbar() {
         <Navbar.Brand>Quiz App</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="justify-content-end">
-          {loggedin ? (
+          {isLoggedIn ? (
             <NavDropdown title={username}>
-              <NavDropdown.Item
-                onClick={() => commitLogoutMutation({ variables: {} })}
-              >
-                Logout
-              </NavDropdown.Item>
+              <NavDropdown.Item onClick={logout}>Logout</NavDropdown.Item>
             </NavDropdown>
           ) : (
             <NavItem>Not logged in</NavItem>

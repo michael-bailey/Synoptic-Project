@@ -1,12 +1,15 @@
+import { useRouter } from 'next/router';
+import useAccount from '../Hooks/useAccount';
+
 export function Index() {
-  /*
-   * Replace the elements below with your own.
-   *
-   * Note: The corresponding styles are in the ./index.css file.
-   */
+  const { isLoggedIn } = useAccount();
+  const router = useRouter();
+
+  if (!isLoggedIn) router.push('/login');
+
   return (
     <>
-      <h1>Home Page</h1>
+      <h1>Index</h1>
     </>
   );
 }
