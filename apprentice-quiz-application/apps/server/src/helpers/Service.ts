@@ -52,4 +52,9 @@ export default abstract class Service<TEntity, TEntityCreate> {
     console.table(entity);
     await this.repository.delete(entity);
   }
+
+  async save(entity: TEntity) {
+    console.info(`[${Service.name}:save] saving entity`);
+    return await this.repository.save(entity);
+  }
 }
