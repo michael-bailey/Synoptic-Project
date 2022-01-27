@@ -28,17 +28,17 @@ export class AuthResolver {
 
   @ResolveField(() => Root, { nullable: true })
   async root(@Parent() parent: Session): Promise<Root> {
-    return parent.root;
+    return await parent.root;
   }
 
   @ResolveField(() => Admin, { nullable: true })
   async admin(@Parent() parent: Session): Promise<Admin> {
-    return parent.admin;
+    return await parent.admin;
   }
 
   @ResolveField(() => User, { nullable: true })
   async user(@Parent() parent: Session): Promise<User> {
-    return parent.user;
+    return await parent.user;
   }
 
   /**
@@ -49,7 +49,7 @@ export class AuthResolver {
    */
   @Query(() => Session)
   async session(@Context() ctx): Promise<Session> {
-    return this.authService.getSession(ctx);
+    return await this.authService.getSession(ctx);
   }
 
   @Mutation(() => Session)
