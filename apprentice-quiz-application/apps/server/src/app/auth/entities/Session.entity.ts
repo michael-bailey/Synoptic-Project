@@ -12,12 +12,12 @@ export class Session {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @ManyToOne(() => User, (u) => u.sessions)
+  @ManyToOne(() => User, (u) => u.sessions, { nullable: true })
   user: Promise<User | null>;
 
-  @ManyToOne(() => Admin, (a) => a.sessions)
+  @ManyToOne(() => Admin, (a) => a.sessions, { nullable: true })
   admin: Promise<Admin | null>;
 
-  @ManyToOne(() => Root, (r) => r.sessions)
+  @ManyToOne(() => Root, (r) => r.sessions, { nullable: true })
   root: Promise<Root | null>;
 }
