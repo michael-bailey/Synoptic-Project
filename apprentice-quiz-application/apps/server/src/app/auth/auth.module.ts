@@ -1,12 +1,24 @@
 import { Module } from '@nestjs/common';
-import { AuthService } from './auth.service';
-import { AuthResolver } from './auth.resolver';
 import { TypeOrmModule } from '@nestjs/typeorm';
+
 import { Session } from './entities/Session.entity';
-import { Account } from './entities/Account.entity';
+import { Admin } from './entities/Admin.entity';
+import { AuthResolver } from './resolvers/auth.resolver';
+import { User } from './entities/User.entity';
+import { AuthService } from './services/auth.service';
+import { Root } from './entities/Root.entity';
+import { AdminResolver } from './resolvers/admin.resolver';
+import { RootResolver } from './resolvers/root.resolver';
+import { UserResolver } from './resolvers/user.resolver';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Session, Account])],
-  providers: [AuthResolver, AuthService],
+  imports: [TypeOrmModule.forFeature([User, Admin, Root, Session])],
+  providers: [
+    AdminResolver,
+    RootResolver,
+    AuthResolver,
+    UserResolver,
+    AuthService,
+  ],
 })
 export class AuthModule {}
