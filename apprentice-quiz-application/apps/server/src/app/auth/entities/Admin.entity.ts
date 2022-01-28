@@ -1,5 +1,6 @@
 import { ObjectType } from '@nestjs/graphql';
 import { Entity, ManyToOne, OneToMany } from 'typeorm';
+import { Quiz } from '../../quiz/entities/Quiz.entity';
 
 import { Account } from './Account.entity';
 import { Root } from './Root.entity';
@@ -17,4 +18,7 @@ export class Admin extends Account {
 
   @ManyToOne(() => Root, (r) => r.admins)
   root: Promise<Root>;
+
+  @OneToMany(() => Quiz, (q) => q.admin)
+  quizzes: Promise<Array<Quiz>>;
 }
