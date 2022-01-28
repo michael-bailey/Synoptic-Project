@@ -13,14 +13,12 @@ import { Session } from '../entities/Session.entity';
 import { User } from '../entities/User.entity';
 import { AdminService } from '../services/admin.service';
 import { AuthService } from '../services/auth.service';
-import { UserService } from '../services/user.service';
 
 @Resolver(() => Admin)
 export class AdminResolver {
   constructor(
     private authService: AuthService,
-    private adminService: AdminService,
-    private userService: UserService
+    private adminService: AdminService
   ) {}
 
   @ResolveField(() => [User])
@@ -41,10 +39,24 @@ export class AdminResolver {
   ): Promise<Admin> {
     const admin = await (await this.authService.getSession(ctx)).admin;
     console.table(admin);
-    if (admin == null) throw new NotFoundException('root user not found');
+    if (admin == null) throw new NotFoundException('admin user not found');
     return await this.adminService.addUser(admin, {
       username,
       password,
+    });
+  }
+
+  @Mutation(() => Admin)
+  async addQuiz(
+    @Context() ctx,
+    @Args('title') title: string,
+    @Args('description', { nullable: true }) description: string
+  ) {
+    const admin = await (await this.authService.getSession(ctx)).admin;
+    if (admin == null) throw new NotFoundException('admin not found logged in');
+    return await this.adminService.addQuiz(admin, {
+      title,
+      description,
     });
   }
 }

@@ -6,6 +6,14 @@ type Test {
   id: String!
 }
 
+type Quiz {
+  id: String!
+  title: String!
+  description: String
+  admin: Admin!
+  questions: Admin!
+}
+
 type Root {
   id: String!
   username: String!
@@ -40,9 +48,11 @@ type Query {
 
 type Mutation {
   createUser(password: String!, username: String!): Admin!
+  addQuiz(description: String, title: String!): Admin!
   createAdmin(password: String!, username: String!): Root!
   loginRoot(password: String!): Session!
   loginAdmin(password: String!, username: String!): Session!
   loginUser(password: String!, username: String!): Session!
   logout: Session!
+  addQuestion(description: String, title: String!, id: String!): Quiz!
 }
