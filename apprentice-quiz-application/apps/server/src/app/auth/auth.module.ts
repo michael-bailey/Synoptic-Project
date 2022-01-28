@@ -13,9 +13,10 @@ import { UserResolver } from './resolvers/user.resolver';
 import { RootService } from './services/root.service';
 import { AdminService } from './services/admin.service';
 import { UserService } from './services/user.service';
+import { QuizModule } from '../quiz/quiz.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([User, Admin, Root, Session])],
+  imports: [TypeOrmModule.forFeature([User, Admin, Root, Session]), QuizModule],
   providers: [
     AdminResolver,
     RootResolver,
