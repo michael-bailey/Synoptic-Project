@@ -11,7 +11,7 @@ import { Quiz } from '../../quiz/entities/Quiz.entity';
 
 @Entity()
 @ObjectType()
-export abstract class Question {
+export class Question {
   @Field()
   @PrimaryGeneratedColumn('uuid')
   id: string;
