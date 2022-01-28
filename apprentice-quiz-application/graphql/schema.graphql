@@ -26,7 +26,7 @@ type Quiz {
   title: String!
   description: String
   admin: Admin!
-  questions: Admin!
+  questions: [Question!]!
 }
 
 type Root {
@@ -46,6 +46,7 @@ type Admin {
   id: String!
   username: String!
   users: [User!]!
+  quizzes: [Quiz!]!
   sessions: Session!
 }
 

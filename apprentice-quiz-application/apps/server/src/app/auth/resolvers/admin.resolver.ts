@@ -7,6 +7,7 @@ import {
   ResolveField,
   Resolver,
 } from '@nestjs/graphql';
+import { Quiz } from '../../quiz/entities/Quiz.entity';
 
 import { Admin } from '../entities/Admin.entity';
 import { Session } from '../entities/Session.entity';
@@ -24,6 +25,11 @@ export class AdminResolver {
   @ResolveField(() => [User])
   async users(@Parent() parent: Admin): Promise<Array<User>> {
     return await parent.users;
+  }
+
+  @ResolveField(() => [Quiz])
+  async quizzes(@Parent() parent: Admin): Promise<Array<Quiz>> {
+    return await parent.quizzes;
   }
 
   @ResolveField(() => Session)

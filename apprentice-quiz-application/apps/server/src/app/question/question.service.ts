@@ -20,9 +20,7 @@ export class QuestionService extends Service<Question, CreateQuestionInput> {
 
   async addAnswer(question: Question, createDTO: CreateAnswerInput) {
     const answer = await this.answerService.create(createDTO);
-
     const answers = await question.answers;
-
     question.answers = Promise.resolve([...answers, answer]);
     return await this.save(question);
   }

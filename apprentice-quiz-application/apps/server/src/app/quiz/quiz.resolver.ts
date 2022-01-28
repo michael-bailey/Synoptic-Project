@@ -7,6 +7,7 @@ import {
   Resolver,
 } from '@nestjs/graphql';
 import { Admin } from '../auth/entities/Admin.entity';
+import { Question } from '../question/entities/Question.entity';
 import { Quiz } from './entities/Quiz.entity';
 import { QuizService } from './quiz.service';
 
@@ -19,7 +20,7 @@ export class QuizResolver {
     return await parent.admin;
   }
 
-  @ResolveField(() => Admin)
+  @ResolveField(() => [Question])
   async questions(@Parent() parent: Quiz) {
     return await parent.questions;
   }
