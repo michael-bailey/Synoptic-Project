@@ -20,7 +20,7 @@ export class AnswerResolver {
   }
 
   @Mutation(() => Answer)
-  async updateQuestion(
+  async updateAnswer(
     @Args('id') id: string,
     @Args('text', { nullable: true }) text: string | null,
     @Args('isCorrect', { nullable: true }) isCorrect: boolean | null

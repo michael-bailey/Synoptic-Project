@@ -74,6 +74,7 @@ type Mutation {
   addQuestion(extra: String, title: String!, id: String!): Quiz!
   removeQuestion(answerId: String!, id: String!): Question!
   updateQuiz(description: String, title: String, id: String!): Quiz!
-  updateQuestion(isCorrect: Boolean, text: String, id: String!): Answer!
+  updateQuestion(extra: String, text: String, id: String!): Question!
   addAnswer(isCorrect: Boolean!, text: String!, id: String!): Question!
+  updateAnswer(isCorrect: Boolean, text: String, id: String!): Answer!
 }
