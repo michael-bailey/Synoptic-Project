@@ -1,8 +1,6 @@
 import { NotFoundException } from '@nestjs/common';
 import {
   Args,
-  CONTEXT,
-  Context,
   Mutation,
   Parent,
   ResolveField,
@@ -38,6 +36,17 @@ export class QuizResolver {
       text,
       extra,
     });
+  }
+
+  @Mutation(() => Quiz)
+  async removeQuestion(
+    @Args('id') id: string,
+    @Args('questionId') questionId: string
+  ) {
+    const quiz = await this.quizService.findById(id);
+    if (quiz == null) throw new NotFoundException('quiz not found');
+
+    return await this.quizService.removeQuestion(quiz, questionId);
   }
 
   @Mutation(() => Quiz)

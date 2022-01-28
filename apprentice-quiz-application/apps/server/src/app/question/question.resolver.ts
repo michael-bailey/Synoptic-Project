@@ -37,7 +37,7 @@ export class QuestionResolver {
   }
 
   @Mutation(() => Question)
-  async addQuestion(
+  async addAnswer(
     @Args('id') id: string,
     @Args('text') text: string,
     @Args('isCorrect') isCorrect: boolean
@@ -48,5 +48,15 @@ export class QuestionResolver {
       text,
       isCorrect,
     });
+  }
+
+  @Mutation(() => Question)
+  async removeQuestion(
+    @Args('id') id: string,
+    @Args('answerId') answerId: string
+  ) {
+    const question = await this.questionService.findById(id);
+    if (question == null) throw new NotFoundException('question not found');
+    return await this.questionService.removeAnswer(question, answerId);
   }
 }

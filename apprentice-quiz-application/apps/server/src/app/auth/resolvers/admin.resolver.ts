@@ -59,4 +59,12 @@ export class AdminResolver {
       description,
     });
   }
+
+  @Mutation(() => Admin)
+  async removeQuiz(@Context() ctx, @Args('id') id: string) {
+    const admin = await (await this.authService.getSession(ctx)).admin;
+    if (admin == null) throw new NotFoundException('admin not found logged in');
+
+    return await this.adminService.removeQuiz(admin, id);
+  }
 }

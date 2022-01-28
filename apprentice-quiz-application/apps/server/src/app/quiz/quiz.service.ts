@@ -26,4 +26,11 @@ export class QuizService extends Service<Quiz, CreateQuizInput> {
     quiz.questions = Promise.resolve([...questions, question]);
     return await this.save(quiz);
   }
+
+  async removeQuestion(quiz: Quiz, id: string) {
+    quiz.questions = Promise.resolve(
+      (await quiz.questions).filter((q) => q.id != id)
+    );
+    return this.save(quiz);
+  }
 }
