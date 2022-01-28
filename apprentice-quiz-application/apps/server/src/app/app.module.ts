@@ -8,6 +8,7 @@ import { join } from 'path';
 import { AuthModule } from './auth/auth.module';
 import { QuizModule } from './quiz/quiz.module';
 import { QuestionModule } from './question/question.module';
+import { AnswerModule } from './answer/answer.module';
 
 const DB_HOST = process.env['DB_HOST'] ?? 'localhost';
 const DB_PORT = process.env['DB_PORT'] ?? '';
@@ -42,6 +43,7 @@ const DB_PORT = process.env['DB_PORT'] ?? '';
     AuthModule,
     QuizModule,
     QuestionModule,
+    AnswerModule,
   ],
   controllers: [],
   providers: [AppService, AppResolver],
