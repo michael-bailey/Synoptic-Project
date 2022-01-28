@@ -6,10 +6,19 @@ type Test {
   id: String!
 }
 
+type Answer {
+  id: String!
+  text: String!
+  isCorrect: Boolean!
+  question: Question!
+}
+
 type Question {
   id: String!
   text: String!
   extra: String
+  quiz: Quiz!
+  answers: [Answer!]!
 }
 
 type Quiz {
