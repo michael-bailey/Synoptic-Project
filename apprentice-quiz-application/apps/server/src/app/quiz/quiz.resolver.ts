@@ -39,4 +39,15 @@ export class QuizResolver {
       extra,
     });
   }
+
+  @Mutation(() => Quiz)
+  async updateQuiz(
+    @Args('id') id: string,
+    @Args('title', { nullable: true }) title: string | null,
+    @Args('description', { nullable: true }) description: string | null
+  ) {
+    const quiz = await this.quizService.findById(id);
+    if (quiz == null) throw new NotFoundException('quiz not found');
+    return await this.quizService.update(id, { title, description });
+  }
 }

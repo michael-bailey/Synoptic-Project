@@ -70,4 +70,6 @@ type Mutation {
   loginUser(password: String!, username: String!): Session!
   logout: Session!
   addQuestion(isCorrect: Boolean!, text: String!, id: String!): Question!
+  updateQuiz(description: String, title: String, id: String!): Quiz!
+  updateQuestion(isCorrect: Boolean, text: String, id: String!): Answer!
 }

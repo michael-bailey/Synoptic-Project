@@ -26,6 +26,17 @@ export class QuestionResolver {
   }
 
   @Mutation(() => Question)
+  async updateQuestion(
+    @Args('id') id: string,
+    @Args('text', { nullable: true }) text: string | null,
+    @Args('extra', { nullable: true }) extra: string | null
+  ) {
+    const quiz = await this.questionService.findById(id);
+    if (quiz == null) throw new NotFoundException('quiz not found');
+    return await this.questionService.update(id, { text, extra });
+  }
+
+  @Mutation(() => Question)
   async addQuestion(
     @Args('id') id: string,
     @Args('text') text: string,
