@@ -6,6 +6,12 @@ type Test {
   id: String!
 }
 
+type Question {
+  id: String!
+  text: String!
+  extra: String
+}
+
 type Quiz {
   id: String!
   title: String!
@@ -54,5 +60,5 @@ type Mutation {
   loginAdmin(password: String!, username: String!): Session!
   loginUser(password: String!, username: String!): Session!
   logout: Session!
-  addQuestion(description: String, title: String!, id: String!): Quiz!
+  addQuestion(isCorrect: Boolean!, text: String!, id: String!): Question!
 }

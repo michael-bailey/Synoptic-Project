@@ -28,5 +28,5 @@ export class Question {
   quiz: Promise<Quiz>;
 
   @OneToMany(() => Answer, (a) => a.question)
-  answers: Promise<Array<Question>>;
+  answers: Promise<Array<Answer>>;
 }

@@ -30,10 +30,10 @@ export class QuizResolver {
   async addQuestion(
     @Args('id') id: string,
     @Args('title') text: string,
-    @Args('description', { nullable: true }) extra: string
+    @Args('extra', { nullable: true }) extra: string
   ) {
     const quiz = await this.quizService.findById(id);
-    if (quiz == null) throw new NotFoundException('admquizin not found');
+    if (quiz == null) throw new NotFoundException('quiz not found');
     return await this.quizService.addQuestion(quiz, {
       text,
       extra,
